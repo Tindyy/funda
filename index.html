@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 
@@ -13,19 +14,24 @@
         <section class="mediaviewer">
             
             <div class="gallery">
-                <img class="one" src="./assets/images/344_1080x720.jpg" alt="">
-                <div class="multiple-images">
-                    <img class="two" src="./assets/images/836_720x480.jpg" alt="">
-                    <img class="three" src="./assets/images/839_1440.jpg" alt="">
-                    <img class="four"src="./assets/images/840_720x480.jpg" alt="">
-                    <img class="five" src="./assets/images/839_720x480.jpg" alt="">
-                </div>
-                <img src="./assets/images/002_720x480.jpg" alt="">
-                <img src="./assets/images/014_720x480.jpg" alt="">
-
-                <div class="attribute-chip">
-                    <p>oi</p>
-                </div>
+    <!-- Main Image -->
+    <img class="one" id="main-image" src="./assets/images/344_1080x720.jpg" alt="Main Image">
+    
+    <!-- Thumbnails -->
+    <button class="scroll-button left">←</button>
+    <div class="thumbnail-container">
+        <img class="multiple-images two" data-src="./assets/images/836_720x480.jpg" src="./assets/images/836_720x480.jpg" alt="Thumbnail 1">
+        <img class="multiple-images three" data-src="./assets/images/839_1440.jpg" src="./assets/images/839_1440.jpg" alt="Thumbnail 2">
+        <img class="multiple-images four" data-src="./assets/images/840_720x480.jpg" src="./assets/images/840_720x480.jpg" alt="Thumbnail 3">
+        <img class="multiple-images five" data-src="./assets/images/839_720x480.jpg" src="./assets/images/839_720x480.jpg" alt="Thumbnail 4">
+        <img class="multiple-images six" data-src="./assets/images/002_720x480.jpg" src="./assets/images/002_720x480.jpg" alt="Thumbnail 5">
+        <img class="multiple-images seven" data-src="./assets/images/014_720x480.jpg" src="./assets/images/014_720x480.jpg" alt="Thumbnail 6">
+    </div>
+    <button class="scroll-button right">→</button>
+    
+    <div class="attribute-chip">
+        <p>1/1</p>
+    </div>
 
                 <div class="button-group">
                     <button class="share">share</button>
@@ -43,4 +49,5 @@
         </section>
     </main>
 </body>
+<script src="./main.js"></script>
 </html>
